@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>RVCE Student Portal - Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <h1>RVCE Student Portal - Dashboard</h1>
+        <p id="loggedInUser"></p>
+    </header>
+
+    <section id="dashboard-content">
+        <div id="cie-marks" class="dashboard-item" onclick="openFolder('CIE Marks')">
+            <img src="cie.png" alt="CIE Marks Icon">
+            <h2>CIE Marks</h2>
+            <!-- Add content for CIE marks -->
+        </div>
+
+        <div id="attendance" class="dashboard-item" onclick="openFolder('Attendance')">
+            <img src="attendance.png" alt="Attendance Icon">
+            <h2>Attendance</h2>
+            <!-- Add content for attendance -->
+        </div>
+
+        <div id="materials" class="dashboard-item" onclick="openFolder('Materials')">
+            <img src="materials.png" alt="Materials Icon">
+            <h2>Materials</h2>
+            <!-- Add content for materials -->
+        </div>
+    </section>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_attendance.css">
+    <title>Attendance Management</title>
+</head>
+<body>
+
+    <header>
+        <h1>Attendance Management</h1>
+        <p id="loggedInUser"></p>
+    </header>
+
+    <section id="content">
+        <div id="branch-selection">
+            <h2>Choose Branch</h2>
+            <label>
+                <input type="radio" name="branch" value="cs"> Computer Science
+            </label>
+            <label>
+                <input type="radio" name="branch" value="cd"> Computer Design
+            </label>
+            <label>
+                <input type="radio" name="branch" value="cy"> Cybersecurity
+            </label>
+            <label>
+                <input type="radio" name="branch" value="is"> Information Science
+            </label>
+            <label>
+                <input type="radio" name="branch" value="ai"> Artificial Intelligence
+            </label>
+            <button onclick="selectBranch()">Select Branch</button>
+        </div>
+
+        <div id="student-list">
+            <!-- Student list for the selected branch will be displayed here -->
+        </div>
+
+        <div id="add-student">
+            <h2>Add Student</h2>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div id="mark-attendance">
+            <h2>Mark Attendance</h2>
+            <label for="attendanceStatus">Select Status:</label>
+            <select id="attendanceStatus">
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+            <button onclick="markAttendance()">Mark Attendance</button>
+        </div>
+    </section>
+
+    <script src="script_attendance.js"></script>
+</body>
+</html>

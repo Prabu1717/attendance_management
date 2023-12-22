@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RVCE Student Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>RVCE Student Portal</h1>
+    </header>
+
+    <section id="content">
+        <div id="college-image">
+            <img src="rvce.jpg" alt="RVCE College">
+        </div>
+
+        <div id="login" style="display:none;">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="role-selection">
+            <h2>Choose Your Role</h2>
+            <label>
+                <input type="radio" name="role" value="admin"> Admin
+            </label>
+            <label>
+                <input type="radio" name="role" value="teacher"> Teacher
+            </label>
+            <label>
+                <input type="radio" name="role" value="student"> Student
+            </label>
+            <button onclick="selectRole()">Next</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

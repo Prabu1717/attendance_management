@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00529f; /* Harvard Blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#college-image {
+    width: 40%;
+    margin: 10px;
+}
+
+#college-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#login, #role-selection {
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+#login {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+button:focus {
+    outline: none;
+    background-color: #ecf0f1;
+}
+
+button {
+    cursor: pointer;
+    background-color: #00529f;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #003366; /* Darker Harvard Blue on hover */
+}
